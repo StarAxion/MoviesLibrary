@@ -33,7 +33,7 @@
 			movieGenre.value = "";
 			movieGenreId.value = "";
 			movieDuration.value = "";
-			movieSynopsis = "";
+			movieSynopsis.value = "";
 			movieActorsList.value = "";
 			window.scrollTo(0, 490);
 		}
