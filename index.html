@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Movies Library</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i,900,900i&display=swap"
+		rel="stylesheet">
+	<link href="fontawesome/css/all.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div class="wrapper">
+
+		<header class="header side-gaps">
+
+			<nav class="nav">
+				<ul class="nav-menu">
+					<li class="nav-menu__item">
+						<a href="index.html" class="site-links">
+							<img src="img/icon.png" class="site-logo-link" alt="icon">
+							<span class="site-title-link">Бібліотека фільмів</span>
+						</a>
+					</li>
+
+					<li class="nav-menu__item">
+						<form action="/" method="get" name="search-form" class="search-form">
+							<input type="search" placeholder="Пошук" class="search-form__input placeholder-styles">
+							<button type="submit" class="search-form__button">
+								<i class="fas fa-search"></i>
+							</button>
+						</form>
+					</li>
+				</ul> <!-- .nav-menu -->
+			</nav> <!-- .nav -->
+
+		</header> <!-- .header -->
+
+
+
+		<main class="main">
+
+			<div class="main-menu side-gaps">
+				<button class="main-menu__button button-click all-movies-button">Усі фільми</button>
+
+				<div class="sort-menu">
+					<h3 class="sort-menu__headline">Сортувати за:</h3>
+
+					<div class="sort-menu__buttons-row">
+						<div class="sort-menu__buttons-block">
+							<h4 class="sort-menu__buttons-name">назвою</h4>
+							<button title="від А до Я" class="sort-menu__button button-click title-sort">
+								<i class="far fa-caret-square-down"></i>
+							</button>
+							<button title="від Я до А" class="sort-menu__button button-click title-sort-reversed">
+								<i class="far fa-caret-square-up"></i>
+							</button>
+						</div>
+
+						<div class="sort-menu__buttons-block">
+							<h4 class="sort-menu__buttons-name">рейтингом</h4>
+							<button title="від більшого до меншого" class="sort-menu__button button-click rating-sort">
+								<i class="far fa-caret-square-down"></i>
+							</button>
+							<button title="від меншого до більшого" class="sort-menu__button button-click rating-sort-reversed">
+								<i class="far fa-caret-square-up"></i>
+							</button>
+						</div>
+
+						<div class="sort-menu__buttons-block">
+							<h4 class="sort-menu__buttons-name">датою виходу</h4>
+							<button title="від нових до старих" class="sort-menu__button button-click release-date-sort">
+								<i class="far fa-caret-square-down"></i>
+							</button>
+							<button title="від старих до нових" class="sort-menu__button button-click release-date-sort-reversed">
+								<i class="far fa-caret-square-up"></i>
+							</button>
+						</div>
+					</div> <!-- .sort-menu__buttons-row -->
+				</div> <!-- .sort-menu -->
+
+				<div class="main-aside_responsive">
+					<div class="genre-menu">
+						<h3 class="genre-menu__headline">Обрати жанр:</h3>
+						<button class="genre-menu__button button-click">Анімаційний</button>
+						<button class="genre-menu__button button-click">Байопік</button>
+						<button class="genre-menu__button button-click">Бойовик</button>
+						<button class="genre-menu__button button-click">Вестерн</button>
+						<button class="genre-menu__button button-click">Військовий</button>
+						<button class="genre-menu__button button-click">Детектив</button>
+						<button class="genre-menu__button button-click">Дитячий</button>
+						<button class="genre-menu__button button-click">Документальний</button>
+						<button class="genre-menu__button button-click">Драма</button>
+						<button class="genre-menu__button button-click">Екшн</button>
+						<button class="genre-menu__button button-click">Жахи</button>
+						<button class="genre-menu__button button-click">Історичний</button>
+						<button class="genre-menu__button button-click">Кінокомікс</button>
+						<button class="genre-menu__button button-click">Комедія</button>
+						<button class="genre-menu__button button-click">Концерт</button>
+						<button class="genre-menu__button button-click">Короткометражний</button>
+						<button class="genre-menu__button button-click">Кримінал</button>
+						<button class="genre-menu__button button-click">Мелодрама</button>
+						<button class="genre-menu__button button-click">Містика</button>
+						<button class="genre-menu__button button-click">Мультфільм</button>
+						<button class="genre-menu__button button-click">Мюзикл</button>
+						<button class="genre-menu__button button-click">Науковий</button>
+						<button class="genre-menu__button button-click">Нуар</button>
+						<button class="genre-menu__button button-click">Пригоди</button>
+						<button class="genre-menu__button button-click">Романтичний</button>
+						<button class="genre-menu__button button-click">Сімейний</button>
+						<button class="genre-menu__button button-click">Спортивний</button>
+						<button class="genre-menu__button button-click">Триллер</button>
+						<button class="genre-menu__button button-click">Фантастика</button>
+						<button class="genre-menu__button button-click">Фентезі</button>
+						<button class="genre-menu__button button-click">Фестиваль</button>
+					</div> <!-- .genre-menu -->
+				</div> <!-- .main-aside -->
+			</div> <!-- .main-menu -->
+
+
+			<div class="main-container">
+				<div class="main-aside">
+					<div class="genre-menu">
+						<h3 class="genre-menu__headline">Обрати жанр:</h3>
+						<button class="genre-menu__button button-click">Анімаційний</button>
+						<button class="genre-menu__button button-click">Байопік</button>
+						<button class="genre-menu__button button-click">Бойовик</button>
+						<button class="genre-menu__button button-click">Вестерн</button>
+						<button class="genre-menu__button button-click">Військовий</button>
+						<button class="genre-menu__button button-click">Детектив</button>
+						<button class="genre-menu__button button-click">Дитячий</button>
+						<button class="genre-menu__button button-click">Документальний</button>
+						<button class="genre-menu__button button-click">Драма</button>
+						<button class="genre-menu__button button-click">Екшн</button>
+						<button class="genre-menu__button button-click">Жахи</button>
+						<button class="genre-menu__button button-click">Історичний</button>
+						<button class="genre-menu__button button-click">Кінокомікс</button>
+						<button class="genre-menu__button button-click">Комедія</button>
+						<button class="genre-menu__button button-click">Концерт</button>
+						<button class="genre-menu__button button-click">Короткометражний</button>
+						<button class="genre-menu__button button-click">Кримінал</button>
+						<button class="genre-menu__button button-click">Мелодрама</button>
+						<button class="genre-menu__button button-click">Містика</button>
+						<button class="genre-menu__button button-click">Мультфільм</button>
+						<button class="genre-menu__button button-click">Мюзикл</button>
+						<button class="genre-menu__button button-click">Науковий</button>
+						<button class="genre-menu__button button-click">Нуар</button>
+						<button class="genre-menu__button button-click">Пригоди</button>
+						<button class="genre-menu__button button-click">Романтичний</button>
+						<button class="genre-menu__button button-click">Сімейний</button>
+						<button class="genre-menu__button button-click">Спортивний</button>
+						<button class="genre-menu__button button-click">Триллер</button>
+						<button class="genre-menu__button button-click">Фантастика</button>
+						<button class="genre-menu__button button-click">Фентезі</button>
+						<button class="genre-menu__button button-click">Фестиваль</button>
+					</div> <!-- .genre-menu -->
+				</div> <!-- .main-aside -->
+
+
+				<div class="main-content side-gaps">
+					<div class="movies-container"></div>
+
+					<div class="add-movie-block">
+						<button class="control-button add-movie-button">
+							<i class="fas fa-folder-plus"></i>
+							<span class="control-button-name">Додати фільм</span>
+						</button>
+
+						<form action="/" method="post" name="movie-create-form" class="movie-form movie-create-form hidden">
+							<label for="movie-id" class="movie-form__field-name">ID:</label>
+							<input type="text" name="create-form__movie-id" class="movie-form__input create-form__movie-id"
+								id="movie-id" required>
+
+							<label for="movie-title" class="movie-form__field-name">Назва:</label>
+							<input type="text" name="create-form__movie-title" class="movie-form__input create-form__movie-title"
+								id="movie-title" required>
+
+							<label for="movie-original-title" class="movie-form__field-name">Оригінальна назва:</label>
+							<input type="text" name="create-form__movie-original-title"
+								class="movie-form__input create-form__movie-original-title" id="movie-original-title" required>
+
+							<label for="movie-poster-url" class="movie-form__field-name">Посилання на постер:</label>
+							<input type="text" name="create-form__movie-poster-url"
+								class="movie-form__input create-form__movie-poster-url" id="movie-poster-url">
+
+							<label for="movie-rating" class="movie-form__field-name">Рейтинг:</label>
+							<input type="number" name="create-form__movie-rating" class="movie-form__input create-form__movie-rating"
+								id="movie-rating">
+
+							<label for="movie-release-date" class="movie-form__field-name">Дата виходу:</label>
+							<input type="text" name="create-form__movie-release-date"
+								class="movie-form__input create-form__movie-release-date" id="movie-release-date" required>
+
+							<label for="movie-genre" class="movie-form__field-name">Жанр:</label>
+							<input type="text" name="create-form__movie-genre" class="movie-form__input create-form__movie-genre"
+								id="movie-genre" required>
+
+							<label for="movie-genre-id" class="movie-form__field-name">Id жанру:</label>
+							<input type="text" name="create-form__movie-genre-id"
+								class="movie-form__input create-form__movie-genre-id" id="movie-genre-id" required>
+
+							<label for="movie-duration" class="movie-form__field-name">Тривалість (у хвилинах):</label>
+							<input type="number" name="create-form__movie-duration"
+								class="movie-form__input create-form__movie-duration" id="movie-duration" required>
+
+							<label for="movie-synopsis" class="movie-form__field-name">Короткий огляд:</label>
+							<textarea name="create-form__movie-synopsis"
+								class="movie-form__textarea movie-form__big-textarea create-form__movie-synopsis"
+								id="movie-synopsis"></textarea>
+
+							<label for="movie-actors-list" class="movie-form__field-name">У головних ролях:</label>
+							<textarea name="create-form__movie-actors-list"
+								class="movie-form__textarea movie-form__small-textarea create-form__movie-actors-list"
+								id="movie-actors-list"></textarea>
+
+							<div class="movie-form__buttons-block">
+								<button type="submit" class="movie-form__button create-form__submit-button">Зберегти</button>
+								<button type="reset" class="movie-form__button create-form__reset-button">Скасувати</button>
+							</div>
+						</form> <!-- .create-movie-form -->
+					</div> <!-- .add-movie-block -->
+
+					<button class="control-button to-top-button">
+						<i class="fas fa-arrow-circle-up"></i>
+						<span class="control-button-name">Повернутись на початок сторінки</span>
+					</button>
+				</div> <!-- .main-content -->
+			</div> <!-- .main-container -->
+
+
+			<div class="confirm-modal">
+				<div class="modal-content">
+					<p class="modal-content__text">Видалити цей фільм?</p>
+					<div class="modal-content__buttons-block">
+						<button id="submit-button" class="modal-content__button">Так</button>
+						<button id="cancel-button" class="modal-content__button">Відміна</button>
+					</div>
+				</div>
+			</div>
+
+		</main> <!-- .main -->
+
+
+
+		<footer class="footer side-gaps">
+
+			<p class="copyright-paragraph">
+				&copy; 2019 Movie Library. Design and coding by <a href="index.html" class="author-link">Maria T.</a>
+			</p>
+
+		</footer> <!-- .footer -->
+
+	</div> <!-- .wrapper -->
+
+
+
+	<script src="js/service/MoviesListService.js"></script>
+	<script src="js/view/MovieView.js"></script>
+	<script src="js/view/MovieDetailsView.js"></script>
+	<script src="js/view/MovieEditView.js"></script>
+	<script src="js/view/MoviesListView.js"></script>
+	<script src="js/main.js"></script>
+	<script src="js/pageButtonsFunctional/addMovie.js"></script>
+	<script src="js/pageButtonsFunctional/searchMovie.js"></script>
+	<script src="js/pageButtonsFunctional/showAllMovies.js"></script>
+	<script src="js/pageButtonsFunctional/sortMovies.js"></script>
+	<script src="js/pageButtonsFunctional/filterMoviesByGenre.js"></script>
+	<script src="js/pageButtonsFunctional/returnToTop.js"></script>
+</body>
+
+</html>
