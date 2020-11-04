@@ -430,6 +430,27 @@ input {
 	text-align: left;
 }
 
+.pagination-controls {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pagination-controls button {
+	margin-top: 0;
+	font-size: 2.2rem;
+}
+
+.pagination-controls button:first-of-type {
+	margin-right: 20px;
+}
+
+.pagination-controls__page-number {
+	margin-right: 20px;
+	font-size: 1.2rem;
+	font-weight: 700;
+}
+
 .back-button {
 	margin: 0 0 50px;
 }

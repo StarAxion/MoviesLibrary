@@ -162,6 +162,7 @@
 			this.synopsis.classList.add("movie-form__textarea", "movie-form__big-textarea", "edit-form__movie-synopsis");
 			this.synopsis.setAttribute('name', "edit-form__movie-synopsis");
 			this.synopsis.setAttribute('id', "movie-synopsis");
+			this.synopsis.required = true;
 			this.synopsis.value = movie.Description;
 			this.editForm.append(this.synopsis);
 

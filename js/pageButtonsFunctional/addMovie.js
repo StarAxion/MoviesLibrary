@@ -1,6 +1,7 @@
 (function () {
 
 	var moviesContainer = document.querySelector(".movies-container");
+	var paginationControls = document.querySelector(".pagination-controls");
 	var addMovieButton = document.querySelector(".add-movie-button");
 	var toTopButton = document.querySelector(".to-top-button");
 	var movieCreateForm = document.querySelector(".movie-create-form");
@@ -19,6 +20,9 @@
 	if (addMovieButton && movieCreateForm) {
 		function addMovie() {
 			moviesContainer.classList.add("hidden");
+			if (paginationControls) {
+				paginationControls.classList.add("hidden");
+			}
 			addMovieButton.classList.add("hidden");
 			if (toTopButton) {
 				toTopButton.classList.add("hidden");
@@ -62,6 +66,9 @@
 		function resetData(e) {
 			e.preventDefault();
 			moviesContainer.classList.remove("hidden");
+			if (paginationControls) {
+				paginationControls.classList.remove("hidden");
+			}
 			addMovieButton.classList.remove("hidden");
 			if (toTopButton) {
 				toTopButton.classList.remove("hidden");

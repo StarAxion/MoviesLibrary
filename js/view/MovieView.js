@@ -1,7 +1,7 @@
 (function () {
 
 	function MovieView(movie) {
-		this.element = document.createElement('li');
+		this.element = document.createElement('div');
 		this.element.classList.add("movie-section");
 		this.element.setAttribute('data-id', movie.ID);
 	}

@@ -164,6 +164,16 @@
 				<div class="main-content side-gaps">
 					<div class="movies-container"></div>
 
+					<div class="pagination-controls">
+						<button id="prev-page" class="control-button" title="назад">
+							<i class="far fa-caret-square-left"></i>
+						</button>
+						<span class="pagination-controls__page-number"></span>
+						<button id="next-page" class="control-button" title="далее">
+							<i class="far fa-caret-square-right"></i>
+						</button>
+					</div>
+
 					<div class="add-movie-block">
 						<button class="control-button add-movie-button">
 							<i class="fas fa-folder-plus"></i>
@@ -209,8 +219,8 @@
 
 							<label for="movie-synopsis" class="movie-form__field-name">Короткий огляд:</label>
 							<textarea name="create-form__movie-synopsis"
-								class="movie-form__textarea movie-form__big-textarea create-form__movie-synopsis"
-								id="movie-synopsis"></textarea>
+								class="movie-form__textarea movie-form__big-textarea create-form__movie-synopsis" id="movie-synopsis"
+								required></textarea>
 
 							<label for="movie-actors-list" class="movie-form__field-name">У головних ролях:</label>
 							<textarea name="create-form__movie-actors-list"
